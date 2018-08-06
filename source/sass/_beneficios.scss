@@ -1,0 +1,29 @@
+.beneficios{
+	padding:15px 0;
+	h2{
+		text-transform:capitalize;
+		font-weight:900;
+	}
+	.bloco{
+		@extend .col-12;
+		margin:15px 0;
+		h3{
+			font-size: 1rem;
+			text-transform:uppercase;
+		}
+		ul{
+			list-style-image: url(../img/bluecheck.png);
+			text-align:justify;
+			padding-left:25px;
+			font-family:'Gotham Book';
+			li{
+				margin:15px 0;
+			}
+		}
+	}
+	@media(min-width: map-get($grid-breakpoints,lg)){
+		.bloco{
+			@include make-col(6);
+		}
+	}
+}

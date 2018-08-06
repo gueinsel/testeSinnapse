@@ -1,0 +1,110 @@
+.bg-azul{
+	background:$azul;
+	margin:0 auto;
+	color:white;
+	padding:15px 0;
+	.faq{
+		@extend .col-12;
+		display:flex;
+		flex-flow:column;
+		justify-content: center;
+		.item{
+			h2{
+				margin-bottom:25px;
+			}
+			ul{
+				font-family:'Gotham Book';
+				list-style-image: url(../img/check.png);
+				padding-left:25px;
+				display:flex;
+				flex-flow:column;
+				text-align:justify;
+				li{
+					margin:15px 0;
+				}
+			}
+		}
+		.owl-nav{
+			display: flex;
+			justify-content: space-around;
+		}
+		.owl-dots{
+			position: relative;
+			top: -27px;
+			width: 40%;
+			margin: 0 auto;
+		}
+	}
+	.formulario{
+		@extend .col-12;
+		background:white;
+		color:$azul;
+		padding:15px;
+		form{
+			fieldset{
+				display:flex;
+				flex-flow:column;
+				justify-content:center;
+				legend{
+					font-weight:bold;
+					font-size:1.6rem;
+					span{
+						padding:5px;
+						color:white;
+						background:$azul;
+					}
+				}
+				input, button{
+					width:100%;
+					margin:25px 0;
+					padding:5px 20px;
+				}
+				input{
+					color:$azul;
+					border:1px solid $azul;
+					border-radius:5px;
+				}
+				button{
+					color:white;
+					background:$azul;
+					text-transform:uppercase;
+					font-weight:bold;
+					border:1px solid $azul;
+					border-radius:5px;
+					cursor:pointer;
+					&:hover{
+						color:$azul;
+						background:white;
+					}
+				}
+				::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+				  color: $azul;
+				}
+				::-moz-placeholder { /* Firefox 19+ */
+				  color: $azul;
+				}
+				:-ms-input-placeholder { /* IE 10+ */
+				  color: $azul;
+				}
+				:-moz-placeholder { /* Firefox 18- */
+				  color: $azul;
+				}
+			}
+		}
+	}
+	@media(min-width: map-get($grid-breakpoints,lg)){
+		padding:35px;
+		.faq{
+			@include make-col(6);
+			.item{
+				ul{
+					text-align:left;
+				}
+			}
+		}
+		.formulario{
+			@include make-col(5);
+			padding:35px;
+		}
+	}
+}

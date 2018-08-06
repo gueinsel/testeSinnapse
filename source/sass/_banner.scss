@@ -1,0 +1,67 @@
+.bg-banner{
+	@extend .col-12;
+	padding:0 15px;
+	background: url(../img/bg-banner.png) center center no-repeat;
+	background-size:cover;
+	height: 440px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	.bg-branco{
+		background:white;
+		color:$azul;
+		padding:15px;
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		img{
+			@extend .img-fluid;
+			margin:15px 0;
+		}
+		.frase{
+			margin:15px 0;
+			font-weight:100;
+			font-size:1.6rem;
+		}
+		span{
+			margin:15px 0;
+			font-size:2.7rem;
+			font-weight:900;
+		}
+	}
+	.homem{
+		display:none;
+		img{
+			max-width:75%;
+			height:auto;
+			position:absolute;
+			right:0;
+		}
+	}
+	@media(min-width: map-get($grid-breakpoints,md)){
+		padding:0;
+	}
+	@media(min-width: map-get($grid-breakpoints,lg)){
+		justify-content:flex-start;
+		
+		.bg-branco{
+			@include make-col(6);
+			z-index:1;
+			height:100%;
+			
+		}
+		.homem{
+			@include make-col(6);
+			width:100%;
+			z-index:2;
+			display:flex;
+			flex-flow:column;
+			align-items:flex-start;
+			justify-content:flex-end;
+			height:100%;
+		}
+	}
+	@media(min-width: map-get($grid-breakpoints,xl)){
+		height:742px;
+	}
+}

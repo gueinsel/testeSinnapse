@@ -1,0 +1,39 @@
+{
+  "name": "testesinnapse",
+  "version": "1.0.0",
+  "description": "Teste para vaga de programador front end",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gueinsel/testeSinnapse.git"
+  },
+  "keywords": [
+    "teste",
+    "vaga",
+    "sinnapse"
+  ],
+  "author": "Guerric Inselberger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gueinsel/testeSinnapse/issues"
+  },
+  "homepage": "https://github.com/gueinsel/testeSinnapse#readme",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.2.0",
+    "bootstrap": "^4.1.3",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-notify": "^3.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglifycss": "^1.1.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
+  }
+}

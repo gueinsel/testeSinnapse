@@ -1,0 +1,75 @@
+@font-face{
+	font-family: Gotham;
+	src: url(../fonts/GothamMedium.ttf);
+}
+@font-face{
+	font-family: 'Gotham Book';
+	src: url(../fonts/GothamBook.ttf);
+}
+@font-face{
+	font-family: Gotham;
+	src: url(../fonts/GothamBold.ttf);
+	font-weight: bold;
+}
+@font-face{
+	font-family: Gotham;
+	src: url(../fonts/GothamLight.ttf);
+	font-weight: 100;
+}
+@font-face{
+	font-family: Gotham;
+	src: url(../fonts/Gotham-Black.otf);
+	font-weight:900;
+}
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "./node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "owl.carousel.min";
+@import "owl.theme.default.min";
+
+$azul: #154363;
+$bg-creme: #f7f7f7;
+$footer: #2d3e52;
+$laranja: #f46801;
+
+.oculto{
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+.bg-creme{
+	background-color:$bg-creme;
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background-color: $bg-creme;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #b0b0b0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: $footer;
+}
+body{
+	font-family: Gotham;
+	color:$azul;
+}
+@import "banner";
+
+@import "cadastro";
+
+@import "beneficios";
+
+@import "clientes";
+
+@import "webinar";
+
+@import "ebook";
+
+@import "footer";

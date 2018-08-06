@@ -1,0 +1,27 @@
+.clientes{
+	padding:15px;
+	h2{
+		text-align:center;
+		font-weight:900;
+		text-transform:capitalize;
+	}
+	.owl-carousel{
+		.owl-stage{
+			display:flex;
+			align-items:center;
+		}
+		.owl-item{
+			.item{
+				text-align: center;
+			}
+			img{
+				@extend .img-fluid;
+				width:initial;
+				margin:15px auto;
+			}
+		}
+	}
+	@media(min-width: map-get($grid-breakpoints,md)){
+		padding:35px;
+	}
+}
