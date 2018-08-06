@@ -62,7 +62,7 @@ $configuracao_da_mensagem_original="
       <td colspan='2'><strong>E-mail:</strong> $email</td>
     </tr>
     <tr>
-      <td colspan='2'><strong>Site:</strong> $site</td>
+      <td colspan='2'><strong>Site:</strong> <a href='$site' target='_blank'>$site</a></td>
     </tr>
   </table>
 </body>
@@ -77,18 +77,18 @@ $configuracao_da_mensagem_original="
 //ESSA VARIAVEL DEFINE SE É O USUARIO QUEM DIGITA O ASSUNTO OU SE DEVE ASSUMIR O ASSUNTO DEFINIDO
 //POR VOCÊ CASO O USUARIO DEFINA O ASSUNTO PONHA "s" NO LUGAR DE "n" E CRIE O CAMPO DE NOME
 //'assunto' NO FORMULARIO DE ENVIO
-$assunto_digitado_pelo_usuario="s";
+$assunto_digitado_pelo_usuario="n";
 
 // //ENVIO DA MENSAGEM ORIGINAL
 if ($assunto_digitado_pelo_usuario=="n")
 {
-$assunto = utf8_decode("$assunto_da_mensagem_original");
+$assunto = utf8_decode($assunto_da_mensagem_original);
 }
 $destino = "$email_para_onde_vai_a_mensagem";
 $mensagem = "$configuracao_da_mensagem_original";
 
 if(mail($destino,$assunto,$mensagem,$headers)){
-  header("Location: ");
+  header("Location: https://gceinselberger.000webhostapp.com");
  die();
 }
 else{
