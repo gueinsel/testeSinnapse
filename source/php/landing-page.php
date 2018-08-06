@@ -183,7 +183,7 @@
 				<div class="direita">
 					<a href="http://sinnapse.com" target="_blank">
 						<span>Desenvolvido por</span>
-						<img src="./dist/img/sinnapse-logo.png" alt="Sinnapse">
+						<img class="show" src="./dist/img/sinnapse-logo.png" alt="Sinnapse">
 					</a>
 				</div> <!-- /direita -->
 			</div> <!-- /row -->

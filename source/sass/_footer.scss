@@ -12,7 +12,15 @@ footer{
 			}
 		}
 		.direita{
-			color:#97abb9;
+			a{
+				color:#97abb9;
+				&:hover{
+					text-decoration:none;
+				}
+				.show{
+					display:block;
+				}
+			}
 		}
 	}
 }
