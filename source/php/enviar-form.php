@@ -38,7 +38,7 @@ $headers  = "MIME-Version: 1.0 \n";
 $headers .= utf8_decode("From: $nome <$email> \n");
 $headers .= "Content-type: text/html; charset=utf-8 \n";
 
-$assunto_da_mensagem_original="Cadastro para EFD-REINF";
+$assunto_da_mensagem_original="Cadastro para EFD-REINF - $nome_do_site";
 
 // FORMA COMO RECEBERÁ O E-MAIL (FORMULÁRIO)
 // ******** OBS: SE FOR ADICIONAR NOVOS CAMPOS, ADICIONE OS CAMPOS NA VARIÁVEL ABAIXO *************
